@@ -86,6 +86,6 @@ Vagrant.configure(2) do |config|
     sudo apt-add-repository -y ppa:ansible/ansible
     sudo apt-get -y update
     sudo apt-get -y install ansible
-    ansible-playbook -i /vagrant/ansible/hosts /vagrant/ansible/develop.yml
+    ansible-playbook -i /vagrant/ansible/hosts /vagrant/ansible/develop.yml -v
   SHELL
 end
